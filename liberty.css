@@ -12,14 +12,19 @@
 }
 .body {
     font-size: 16pt;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 .header {
-  min-height:8vh;
+  min-height:7vh;
   width:100vw;
   border: 1px solid var(--couleur2);
   background-color: var(--couleur2);
   display: flex;
   position: fixed;
+
  
   
 }
@@ -34,17 +39,19 @@
     flex-direction: column;
     justify-content: space-around;
     align-items: center;
-    padding: 0 1cm;
+    padding: 2cm 1cm;
+    
        
 }
 nav {
     min-height: 15%;
     width: 100%;
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
     align-items: center;
     flex-wrap: wrap;
-   
+    margin-left: 1cm;
+    margin-right: 1cm;
    
 }
 
@@ -69,7 +76,9 @@ nav>ul>li {
 nav>ul>li:hover {
     color:black;
     cursor: pointer;
+    text-decoration: underline;
 }
+
 
 .logo {
     width: 200px;
@@ -79,10 +88,24 @@ nav>ul>li:hover {
     background-size: 50%;
     background-repeat: no-repeat;
     background-position:center;
+    -webkit-filter: grayscale(0) blur(0px);
+    filter: grayscale(0) blur(0px);
+    -webkit-transition: all 0.5s ease;
+    transition: all 0.5s ease;
+  
+ }
+
    
-   
-   
-}
+.logo:hover{
+    width: 200px; 
+    height: 150px;
+    border-radius: 50%; 
+    -webkit-transform: rotate(360deg); 
+    transform: rotate(360deg);
+  }
+
+
+
 .texte{
     
     width:100%;
@@ -94,19 +117,16 @@ nav>ul>li:hover {
     text-align: center;
 }
 .boutbas {
-
-  
+    min-height: 8vh;
+    width:25vw;
     margin:5%;
-    min-height:80%;
     background-color:var(--couleur2);
     border:solid var(--couleur2) 4px;
-    width: 12cm;
-    height : 1.5cm;
     color:var(--couleur1);
     text-align: center;
     font-size: 1rem;
     padding: 10px;
-    border-radius: 30%;
+    border-radius: 35px;
    
     
 }
@@ -122,7 +142,6 @@ nav>ul>li:hover {
 .section2{
     min-height: 100vh;
     width:100vw;
-   
     border: 1px solid var(--couleur1);
     background-color: white;
     flex-direction: column;
@@ -224,21 +243,20 @@ nav>ul>li:hover {
 
 }
 .CONTENERS{
-    min-height: 10vh;
-    width:100vw;
+   
+    min-height: 8%;
+    width:100%;
     border: 1px solid var(--couleur1);
     background-color: white;
     display: flex;
     flex-direction: row;
     align-items: center;
     justify-content: center;
-    margin: 0;
+    margin-top: 3cm;
 }
 
 .contenerA,.contenerB,.contenerC,.contenerD{
-    
-    width:6cm;
-    height: 8cm;
+  
     border: 1px solid grey;
     margin: 0.25cm 0.25cm;
     flex-direction: row;
@@ -249,9 +267,9 @@ nav>ul>li:hover {
 
 }
 .contenerA1,.contenerB1,.contenerC1,.contenerD1{
-
-    width:6cm;
-    height: 2cm;
+  
+    width:auto;
+    height: 8vh;
     border-bottom: 1px rgb(78, 76, 76) solid;
     background-color: GREY;
     background-size: 100% 100%;
@@ -276,15 +294,16 @@ nav>ul>li:hover {
     color:black;
     size:0.25cm;
     text-align: center;
-
+    
 }
-.TA1,.TB1,.TC1,.TD1{
+.TA1,.TB1,.TC1,.TD1,.TA2,.TB2,.TC2,.TD2,.TA3,.TB3,.TC3,.TD3,.TA4,.TB4,.TC4,.TD4,.TA5,.TB5,.TC5,.TD5{
     width:6cm;
     height: 1cm;
     border-bottom: 1px grey solid;
     color:grey;
     size:0.25cm;
     text-align: center;
+   
     
 
 
@@ -298,65 +317,14 @@ nav>ul>li:hover {
     size:0.25cm;
     text-align: center;
     
-}
-
-
-.TA1,.TB1,.TC1,.TD1{
-    width:6cm;
-    height: 1cm;
-    border-bottom: 1px grey solid;
-    color:grey;
-    size:0.25cm;
-    text-align: center;
     
 }
-
-.TA2,.TB2,.TC2,.TD2{
-    width:6cm;
-    height: 1cm;
-    border-bottom: 1px grey solid;
-    color:grey;
-    size:0.25cm;
-    text-align: center;
-    
-}
-
-.TA3,.TB3,.TC3,.TD3{
-    width:6cm;
-    height: 1cm;
-    border-bottom: 1px grey solid;
-    color:grey;
-    size:0.25cm;
-    text-align: center;
-    
-}
-
-.TA4,.TB4,.TC4,.TD4{
-    width:6cm;
-    height: 1cm;
-    border-bottom: 1px grey solid;
-    color:grey;
-    size:0.25cm;
-    text-align: center;
-    
-}
-
-.TA5,.TB5,.TC5,.TD5{
-    width:6cm;
-    height: 1cm;
-    border-bottom: 1px grey solid;
-    color:grey;
-    size:0.25cm;
-    text-align: center;
-    
-    
-}
-
 
 .contenerA1:hover,.contenerB1:hover,.contenerC1:hover,.contenerD1:hover,.Sign:hover,.Sign1:hover,.Sign2:hover,.Sign3:hover {
     background-color:rgb(113, 146, 238);
     color:var(--couleur1);
     cursor: pointer;}
+  
     
 .section4{
     min-height: 10vh;
@@ -372,15 +340,14 @@ nav>ul>li:hover {
 
 }
 .section5{
-    min-height: 10vh;
-    width:100vw;
+  
     border: 1px solid rgb(54, 60, 75);
     background-color: rgb(54, 60, 75);
     display: flex;
     flex-direction: row;
     align-items: center;
     justify-content: center;
-    margin: 0;
+    padding-block-end: 2cm;
     color : grey;
 
 }
@@ -405,29 +372,13 @@ nav>ul>li:hover {
 
 .cadre {
     background-color: rgb(54, 60, 75);
-    width: 1000px;
-    margin: 0 auto 15px auto;
-    padding: 70px;
+    width: 10vw;
+    min-height: 10vh;
     border: 1px solid rgb(54, 60, 75);
-    display: flex;
-    align-items: center;
-    justify-content: center;
+    
 }
 
-.cadre2 {
-    background-color: rgb(54, 60, 75);
-    width: auto;
-    border: 1px solid rgb(54, 60, 75);
-    position: absolute;
-    text-align: left;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
 
-
-   
-}
 .input {
     background-color: var(--couleur1);
     margin: 0 auto 0 auto;
@@ -442,93 +393,76 @@ textarea,input {
     font-size: .8rem;
     letter-spacing: 1px;
     color:grey;
+   
 }
 textarea {
     padding: 15px;
     line-height: 1.5;
     border-radius: 5px;
     border: 1px solid rgb(54, 60, 75);
-    box-shadow: 1px 1px 1px  rgb(54, 60, 75);
+    box-shadow: 1px 1px 1px rgb(54, 60, 75);
     text-align:left;
-    margin-left: auto;
+    width: 32vw;
+    min-height: 10vh;
+   
+ 
 }
 .cadreA{
-background-color: rgb(54, 60, 75);
-    width: 1000px;
-    margin: 0 auto 15px auto;
-    padding: 70px;
-    border: 1px solid rgb(54, 60, 75);
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: center;
-    margin: center;
-
-   
-}
-.cadre3 {
     background-color: rgb(54, 60, 75);
-    width: 50px;
-    margin: 0;
+    width: 30vw;
+    min-height: 10vh;
     border: 1px solid rgb(54, 60, 75);
-    text-align: left;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    margin: auto;
-
-
   
-}
-input{
+  
    
-    line-height: 1.5;
-    border-radius: 5px;
-    border: 1px solid  rgb(54, 60, 75);
-    box-shadow: 1px 1px 1px  rgb(54, 60, 75);
-    padding: 10px 240px 15px 0;
-}
-.select{
-    background-color: var(--couleur2);
-    width: 120px;
-    padding: 5px 120px 15px 0;
-    text-align: center;
-    line-height: 1.5;
-    border-radius: 5px;
-    border: 1px solid  rgb(54, 60, 75);
-    box-shadow: 1px 1px 1px  rgb(54, 60, 75);
-    
-
-
 }
 
-.cadre4{
-    text-align: left;
+input{
+    padding: 15px 320px 15px 0;
+    line-height: 1.5;
+    border-radius: 5px;
+    border: 1px solid rgb(54, 60, 75);
+    box-shadow: 1px 1px 1px rgb(54, 60, 75);
+    text-align:left;
+  
+   
+ 
+}
+.ensemble{
+    background-color: rgb(54, 60, 75);
+    width: 480px;
+    min-height: 10vh;
+    border: 1px solid rgb(54, 60, 75);
     display: flex;
     flex-direction: row;
-    align-items: left;
-    justify-content: center;
+    align-items: center ;
+  
     
-
 }
 
+
+select {
+    line-height: 1.5;
+    border-radius: 5px;
+    border: 1px solid  rgb(54, 60, 75);
+    box-shadow: 1px 1px 1px  rgb(54, 60, 75);
+    padding: 15px 280px 15px 0;
+    color: grey;
+    margin-right: 0.5cm;
+    text-align: center;
+   
+    
+}
 button{
     background-color: var(--couleur2);
-    width: 120px;
     line-height: 1.5;
     border:1px solid var(--couleur2);
     border-radius: 5px;
-    padding: 5px 120px 15px 0;
+    padding: 10px 50px 15px 0;
     text-align: center;
+    font-size: 0.4cm;
 
-
-}
-.submit{
-    text-align: center;
-    size: 1cm;
-    
-    
+         
 }
 
 .button:hover {
@@ -536,28 +470,27 @@ button{
     cursor: pointer;
     opacity: 0.33;
     border-radius: 5px;
+ 
     
 }
 
 .cercle{
-    margin: ;
-    width:80px;
+    width:50px;
     background:var(--couleur2);
-    height:80px;
+    height:50px;
     text-align:center;
     border-radius:100px;
-    text-align: center;
-    line-height: 110px;
+    line-height: 80px;
     color: var(--couleur1);
-    font-size:3cm;
-    position: top;
-    margin-top: -35px;
+    font-size:2cm;
+    text-align: center;
+    margin-top: -45px;
 
 }
 
 
 .section6 {
-    min-height: 10vh;
+    min-height: 20vh;
     width:100vw;
     border: 1px solid var(--couleur1);
     background-color: white;
@@ -566,22 +499,23 @@ button{
     justify-content: center;
     align-content: center;
     align-items: center;
+    
 
 }
 
 
 .copy {
-    margin:100px;
+    margin:10px;
     color:grey;
     text-align: center;
-    font-size: 0.25cm;
+    font-size: 0.5cm;
     
 
 }
 
 .reseaux{
 
-    min-height: 100vh;
+    min-height: 10vh;
     width:100vw;
     border: 1px solid var(--couleur1);
     background-color: white;
@@ -593,5 +527,4 @@ button{
     
 
 }
-
 
