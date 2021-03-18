@@ -243,18 +243,18 @@ nav>ul>li:hover {
 
 }
 
-  
  
 .section3A{
     width:100vw;
-    min-height: 30vh;
+    min-height: 20vh;
     border: 1px solid var(--couleur1);
-    background-color:var(--couleur1);
+    background-color: var(--couleur1);
     display: flex;
     flex-direction: row;
     align-items: center;
     justify-content: center;
-    margin-bottom: 3cm;
+    margin-bottom: 2cm;
+    margin-top: 1cm;
    }
    
    
@@ -265,22 +265,28 @@ nav>ul>li:hover {
        width:8vw;
        border-radius: 3px;
        margin-left: 1cm;
-     }
+        }
    
-   tr {border-color: transparent ;}
+   tr {
+       border-color: transparent ;
+       min-height: 10vh;
+       width:8vw;
    
-   
+   }
    th{
    background-color: rgb(235, 240, 239);
    border: 1px solid rgb(235, 240, 239);
    padding: 10px;
    border-radius: 3px;
-   font-size:25px;
+   font-size:20px;
+   min-height: 10vh;
+   width:8vw;
    
      }
    
    td{
-       
+       min-height: 10vh;
+       width:8vw;
        border-bottom: 1px solid rgb(235, 240, 239);
        padding: 10px;
        text-align: center;
@@ -289,7 +295,7 @@ nav>ul>li:hover {
    
    
    .boutbas2{
-       width:12vw;
+       width:10vw;
        min-height: 6vh;
        border: 1px solid black;
        background-color: black;
@@ -297,6 +303,7 @@ nav>ul>li:hover {
        border-radius: 3px;
        text-align:center;
        font-size: 25px;
+       
    
    }
    
@@ -315,6 +322,8 @@ nav>ul>li:hover {
            border-color:rgb(115, 138, 241); 
            
        }
+   
+   
     
 .section4{
     min-height: 10vh;
