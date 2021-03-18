@@ -242,89 +242,79 @@ nav>ul>li:hover {
  
 
 }
-.CONTENERS{
-   
-    min-height: 8%;
-    width:100%;
+
+  
+ 
+.section3A{
+    width:100vw;
+    min-height: 30vh;
     border: 1px solid var(--couleur1);
-    background-color: white;
+    background-color:var(--couleur1);
     display: flex;
     flex-direction: row;
     align-items: center;
     justify-content: center;
-    margin-top: 3cm;
-}
-
-.contenerA,.contenerB,.contenerC,.contenerD{
-  
-    border: 1px solid grey;
-    margin: 0.25cm 0.25cm;
-    flex-direction: row;
-    justify-content: center;
-    align-content: center;
-    align-items: center;
-    text-align: center;
-
-}
-.contenerA1,.contenerB1,.contenerC1,.contenerD1{
-  
-    width:auto;
-    height: 8vh;
-    border-bottom: 1px rgb(78, 76, 76) solid;
-    background-color: GREY;
-    background-size: 100% 100%;
-    flex-direction: column;
-    justify-content: center;
-    align-content: center;
-    align-items:flex-start;
-    text-align: center;
-    color: var(--couleur1);
-    size:0.25cm;
-}
-
-
-.TA,.TB,.TC,.TD{color:black;
-    size:10px;
-    text-align: center;
-    font-weight: bold;
- 
-
-}
-.PrixA,.PrixB,.PrixC,.PrixD{
-    color:black;
-    size:0.25cm;
-    text-align: center;
-    
-}
-.TA1,.TB1,.TC1,.TD1,.TA2,.TB2,.TC2,.TD2,.TA3,.TB3,.TC3,.TD3,.TA4,.TB4,.TC4,.TD4,.TA5,.TB5,.TC5,.TD5{
-    width:6cm;
-    height: 1cm;
-    border-bottom: 1px grey solid;
-    color:grey;
-    size:0.25cm;
-    text-align: center;
+    margin-bottom: 3cm;
+   }
    
-    
-
-
-}
-.Sign,.Sign1,.Sign2,.Sign3{
-    width:6cm;
-    height: 1cm;
-    border-bottom: 1px grey solid;
-    color:var(--couleur1);
-    background-color: black;
-    size:0.25cm;
-    text-align: center;
-    
-    
-}
-
-.contenerA1:hover,.contenerB1:hover,.contenerC1:hover,.contenerD1:hover,.Sign:hover,.Sign1:hover,.Sign2:hover,.Sign3:hover {
-    background-color:rgb(113, 146, 238);
-    color:var(--couleur1);
-    cursor: pointer;}
-  
+   
+   
+   table{
+      
+       min-height: 60vh;
+       width:8vw;
+       border-radius: 3px;
+       margin-left: 1cm;
+     }
+   
+   tr {border-color: transparent ;}
+   
+   
+   th{
+   background-color: rgb(235, 240, 239);
+   border: 1px solid rgb(235, 240, 239);
+   padding: 10px;
+   border-radius: 3px;
+   font-size:25px;
+   
+     }
+   
+   td{
+       
+       border-bottom: 1px solid rgb(235, 240, 239);
+       padding: 10px;
+       text-align: center;
+   
+     }
+   
+   
+   .boutbas2{
+       width:12vw;
+       min-height: 6vh;
+       border: 1px solid black;
+       background-color: black;
+       color:var(--couleur1);
+       border-radius: 3px;
+       text-align:center;
+       font-size: 25px;
+   
+   }
+   
+   .boutbas2:hover, th:hover{
+       background-color:rgb(115, 138, 241); 
+       color: var(--couleur1);
+       
+   }
+   table:hover{
+       border: 3px solid rgb(115, 138, 241); 
+   }
+   .boutbas2:hover, th:hover
+   {
+           background-color:rgb(115, 138, 241); 
+           color:var(--couleur1);
+           border-color:rgb(115, 138, 241); 
+           
+       }
     
 .section4{
     min-height: 10vh;
@@ -368,111 +358,98 @@ nav>ul>li:hover {
 
 
 }
-
-
-.cadre {
-    background-color: rgb(54, 60, 75);
-    width: 10vw;
-    min-height: 10vh;
-    border: 1px solid rgb(54, 60, 75);
-    
-}
-
-
-.input {
-    background-color: var(--couleur1);
-    margin: 0 auto 0 auto;
-    padding: 30px;
-    border: 1px solid rgb(54, 60, 75);
-    border-radius: 10%;
-   
-}
-
-fieldset,
-textarea,input {
-    font-size: .8rem;
-    letter-spacing: 1px;
-    color:grey;
-   
-}
-textarea {
-    padding: 15px;
-    line-height: 1.5;
-    border-radius: 5px;
-    border: 1px solid rgb(54, 60, 75);
-    box-shadow: 1px 1px 1px rgb(54, 60, 75);
-    text-align:left;
-    width: 32vw;
-    min-height: 10vh;
-   
- 
-}
-.cadreA{
-    background-color: rgb(54, 60, 75);
-    width: 30vw;
-    min-height: 10vh;
-    border: 1px solid rgb(54, 60, 75);
-  
-  
-   
-}
-
-input{
-    padding: 15px 320px 15px 0;
-    line-height: 1.5;
-    border-radius: 5px;
-    border: 1px solid rgb(54, 60, 75);
-    box-shadow: 1px 1px 1px rgb(54, 60, 75);
-    text-align:left;
-  
-   
- 
-}
-.ensemble{
-    background-color: rgb(54, 60, 75);
-    width: 480px;
-    min-height: 10vh;
-    border: 1px solid rgb(54, 60, 75);
-    display: flex;
+form {
+	background-color : rgb(54, 60, 75);
+	border-color:rgb(54, 60, 75);
+	padding:8px;
+	width:100vw;
+	min-height: 40vh;
+	display: flex;
     flex-direction: row;
-    align-items: center ;
-  
-    
+    align-items: center;
+    justify-content: center;
+	
+	}
+   fieldset {
+	width:31vw;
+	min-height: 31vh;
+	padding:0 20px 20px 20px;
+	margin-bottom:10px;
+	border: 1px solid rgb(54, 60, 75);
+
+	}
+ 	
+   textarea, select {
+	background-color:var(--couleur1);
+	line-height: 1.5;
+	width:20vw;
+	min-height: 5vh;
+	}
+   textarea {
+	padding:3px;
+	border:1px solid var(--couleur1);
+	border-radius:5px;
+	width:30vw;
+	min-height: 20vh;
+	box-shadow:1px 1px 2px   rgb(54, 60, 75);
+	border-radius: 5px;
+	margin-bottom:3px;
+	}
+	input{
+
+		padding:3px;
+		border:1px solid var(--couleur1);
+		border-radius:5px;
+		width:30vw;
+		min-height: 7vh;
+		box-shadow:1px 1px 2px   rgb(54, 60, 75);
+		border-radius: 5px;
+		margin-bottom:15px;
+		}
+
+.box{
+	width:30vw;
+	min-height: 7vh;
+	border:1px solid rgb(54, 60, 75);
+	display: flex;
+    flex-direction: row;
+	
 }
 
+select{
+		padding:3px;
+		border:1px solid var(--couleur1);
+		border-radius:5px;
+		width:20vw;
+		min-height: 7vh;
+		box-shadow:1px 1px 2px  rgb(54, 60, 75);
+		border-radius: 5px;
+		color:grey;
+	}
 
-select {
-    line-height: 1.5;
-    border-radius: 5px;
-    border: 1px solid  rgb(54, 60, 75);
-    box-shadow: 1px 1px 1px  rgb(54, 60, 75);
-    padding: 15px 280px 15px 0;
-    color: grey;
-    margin-right: 0.5cm;
-    text-align: center;
-   
-    
-}
 button{
-    background-color: var(--couleur2);
-    line-height: 1.5;
-    border:1px solid var(--couleur2);
-    border-radius: 5px;
-    padding: 10px 50px 15px 0;
-    text-align: center;
-    font-size: 0.4cm;
+	background-color: var(--couleur2);
+	border-radius: 5px;
+	font-size: 0.5cm;
+	color:black;
+	width:8vw;
+	min-height: 7vh;
+	margin-left: 10px;
 
-         
 }
 
 .button:hover {
-    background-color:grey;
+    background-color:rgb(54, 60, 75);
     cursor: pointer;
     opacity: 0.33;
     border-radius: 5px;
- 
-    
+	width:8vw;
+	min-height: 7vh;
+	
 }
+    
+
+
 
 .cercle{
     width:50px;
@@ -493,7 +470,7 @@ button{
     min-height: 20vh;
     width:100vw;
     border: 1px solid var(--couleur1);
-    background-color: white;
+    background-color: var(--couleur1);
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -506,7 +483,7 @@ button{
 
 .copy {
     margin:10px;
-    color:grey;
+    color:rgb(54, 60, 75);
     text-align: center;
     font-size: 0.5cm;
     
@@ -518,7 +495,7 @@ button{
     min-height: 10vh;
     width:100vw;
     border: 1px solid var(--couleur1);
-    background-color: white;
+    background-color: var(--couleur1);
     display: flex;
     flex-direction: row;
     justify-content: center;
